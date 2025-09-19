@@ -1,0 +1,6 @@
+{"functions":[{"name":"main","instrs":[
+  {"label":"h"},
+  {"op":"jmp","labels":["b"]},
+  {"label":"b"},
+  {"op":"jmp","labels":["h"]}
+]}]}

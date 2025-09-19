@@ -1,0 +1,17 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "instrs": [
+        { "op": "const", "type": "bool", "dest": "c", "value": true },
+        { "op": "br", "args": ["c"], "labels": ["l1", "l2"] },
+        { "label": "l1" },
+        { "op": "jmp", "labels": ["end"] },
+        { "label": "l2" },
+        { "op": "jmp", "labels": ["end"] },
+        { "label": "end" },
+        { "op": "ret" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"functions":[{"name":"main","instrs":[
+  {"op":"const","type":"int","dest":"x","value":1},
+  {"op":"ret"}
+]}]}
