@@ -1,0 +1,12 @@
+b1:
+  in:  ∅
+  out: b1:0, b1:1, b1:2, b1:3
+then:
+  in:  b1:0, b1:1, b1:2, b1:3
+  out: b1:0, b1:1, b1:2, then:0
+else:
+  in:  b1:0, b1:1, b1:2, b1:3
+  out: b1:0, b1:1, b1:2, else:0
+join:
+  in:  b1:0, b1:1, b1:2, else:0, then:0
+  out: b1:0, b1:1, b1:2, else:0, then:0

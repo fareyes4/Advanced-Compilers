@@ -1,0 +1,1 @@
+command = "/usr/bin/env python3 /home/fareyes4/bril/examples/reachingdefs.py < /home/fareyes4/bril/examples/tests-rd/rd1.json"

@@ -1,0 +1,23 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "instrs": [
+        { "op": "const", "dest": "a", "type": "int", "value": 1 },
+        { "op": "const", "dest": "b", "type": "int", "value": 2 },
+        { "op": "const", "dest": "t", "type": "bool", "value": true },
+        { "op": "add",   "dest": "c", "type": "int", "args": ["a","b"] },
+        { "op": "br",    "args": ["t"], "labels": ["then","else"] },
+        { "label": "then" },
+        { "op": "add",   "dest": "c", "type": "int", "args": ["c","b"] },
+        { "op": "jmp",   "labels": ["join"] },
+        { "label": "else" },
+        { "op": "add",   "dest": "c", "type": "int", "args": ["a","c"] },
+        { "op": "jmp",   "labels": ["join"] },
+        { "label": "join" },
+        { "op": "print", "args": ["c"] },
+        { "op": "ret" }
+      ]
+    }
+  ]
+}

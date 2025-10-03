@@ -1,0 +1,22 @@
+{
+  "functions": [
+    {
+      "name": "main",
+      "instrs": [
+        { "op": "const", "dest": "a", "type": "int", "value": 7 },
+        { "op": "const", "dest": "b", "type": "int", "value": 3 },
+        { "op": "add",   "dest": "c", "type": "int", "args": ["a","b"] },
+        { "op": "br",    "args": ["b"], "labels": ["T","F"] },
+        { "label": "T" },
+        { "op": "mul",   "dest": "d", "type": "int", "args": ["c","b"] },
+        { "op": "jmp",   "labels": ["J"] },
+        { "label": "F" },
+        { "op": "add",   "dest": "e", "type": "int", "args": ["a","b"] },
+        { "op": "jmp",   "labels": ["J"] },
+        { "label": "J" },
+        { "op": "print", "args": ["c"] },
+        { "op": "ret" }
+      ]
+    }
+  ]
+}

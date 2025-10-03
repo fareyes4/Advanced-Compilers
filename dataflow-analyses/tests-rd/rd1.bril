@@ -1,0 +1,16 @@
+@main {
+  a: int = const 1;
+  b: int = const 2;
+  t: bool = const true;
+  c: int = add a b;
+  br t then_lbl else_lbl;
+then_lbl:
+  c = add c b;
+  jmp join_lbl;
+else_lbl:
+  c = add a c;
+  jmp join_lbl;
+join_lbl:
+  print c;
+  ret;
+}
